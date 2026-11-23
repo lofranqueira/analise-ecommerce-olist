@@ -6,12 +6,15 @@ Projeto de portfólio com **PostgreSQL**, utilizando o conjunto público de dado
 
 Responder perguntas de negócio com SQL e transformar os resultados em indicadores que apoiem decisões sobre vendas, experiência do cliente e logística.
 
-## Ferramentas
+## Ferramentas utilizadas
 
 - PostgreSQL 18
 - pgAdmin
 - SQL
-- Python/Pandas e Power BI
+- Python
+- Pandas
+- Jupyter Notebook
+- Matplotlib
 
 ## Fonte dos dados
 
