@@ -24,6 +24,7 @@ O conjunto contém informações de pedidos, clientes, itens, produtos, vendedor
 
 ## Estrutura do projeto
 
+```text
 analise-ecommerce-olist/
 ├── sql/
 │   └── 01_analises_olist.sql
@@ -31,6 +32,7 @@ analise-ecommerce-olist/
 ├── README.md
 ├── analise_ecommerce_olist.ipynb
 └── projeto_olist.sql
+```
 
 ## Análises realizadas
 
