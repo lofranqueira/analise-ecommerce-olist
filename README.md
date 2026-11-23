@@ -21,14 +21,13 @@ O conjunto contém informações de pedidos, clientes, itens, produtos, vendedor
 
 ## Estrutura do projeto
 
-```text
-projeto_olist/
-├── dados/       # Arquivos CSV originais (não enviados ao GitHub)
-├── sql/         # Consultas SQL do projeto
-├── python/      # Análises futuras com Python
-├── powerbi/     # Dashboard futuro
-└── README.md
-```
+analise-ecommerce-olist/
+├── sql/
+│   └── 01_analises_olist.sql
+├── .gitignore
+├── README.md
+├── analise_ecommerce_olist.ipynb
+└── projeto_olist.sql
 
 ## Análises realizadas
 
