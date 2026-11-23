@@ -33,15 +33,26 @@ analise-ecommerce-olist/
 ├── analise_ecommerce_olist.ipynb
 └── projeto_olist.sql
 ```
-
 ## Análises realizadas
+
+### Análises com SQL
 
 1. **Visão geral dos pedidos:** volume por status, cancelamentos e evolução mensal.
 2. **Análise financeira:** receita de produtos, frete, receita por categoria e ticket médio.
 3. **Avaliações:** nota média, distribuição das notas e percentual de avaliações negativas.
 4. **Logística:** atrasos, tempo médio de entrega e comparação por estado.
 
-As consultas estão em [`sql/01_analises_olist.sql`](sql/01_analises_olist.sql).
+### Análises com Python
+
+1. Análise exploratória dos dados do e-commerce.
+2. Análise da evolução mensal dos pedidos.
+3. Avaliação do impacto dos atrasos nas avaliações dos clientes.
+4. Visualização gráfica dos principais indicadores e resultados.
+
+**Arquivos do projeto:**
+
+- Consultas SQL: `sql/01_analises_olist.sql`
+- Notebook Python: `analise_ecommerce_olist.ipynb`
 
 ## Principais resultados encontrados
 
