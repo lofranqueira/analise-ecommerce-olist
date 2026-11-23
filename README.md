@@ -4,7 +4,7 @@ Projeto de portfólio com **PostgreSQL**, utilizando o conjunto público de dado
 
 ## Objetivo
 
-Responder perguntas de negócio com SQL e transformar os resultados em indicadores que apoiem decisões sobre vendas, experiência do cliente e logística.
+Utilizar SQL e Python para analisar dados do e-commerce brasileiro, identificar padrões de vendas, avaliar a experiência dos clientes e investigar o desempenho logístico, transformando dados em indicadores relevantes para decisões de negócio.
 
 ## Ferramentas utilizadas
 
@@ -89,11 +89,20 @@ Resultados calculados durante a exploração do conjunto:
 
 ## Como executar
 
+### Análises SQL
+
 1. Baixe os CSVs na fonte indicada.
 2. Crie um banco PostgreSQL.
 3. Importe as tabelas do conjunto Olist.
 4. Abra `sql/01_analises_olist.sql` no pgAdmin.
 5. Execute os blocos individualmente e confira os resultados.
+
+### Análises Python
+
+1. Abra o arquivo `analise_ecommerce_olist.ipynb` no Jupyter Notebook.
+2. Certifique-se de que as bibliotecas Pandas e Matplotlib estejam instaladas.
+3. Execute as células do notebook na ordem apresentada.
+4. Confira as tabelas, análises e gráficos gerados.
 
 ## Próximas melhorias
 
@@ -105,4 +114,4 @@ Resultados calculados durante a exploração do conjunto:
 
 ## Status
 
-Em desenvolvimento — etapa SQL exploratória concluída parcialmente.
+Análises exploratórias com SQL e Python concluídas. Projeto em evolução, com possibilidades de aprofundamento e desenvolvimento de dashboard.
