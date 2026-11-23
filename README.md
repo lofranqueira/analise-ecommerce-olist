@@ -11,7 +11,7 @@ Responder perguntas de negócio com SQL e transformar os resultados em indicador
 - PostgreSQL 18
 - pgAdmin
 - SQL
-- (Próximas etapas) Python/Pandas e Power BI
+- Python/Pandas e Power BI
 
 ## Fonte dos dados
 
