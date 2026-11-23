@@ -97,12 +97,11 @@ Resultados calculados durante a exploração do conjunto:
 
 ## Próximas melhorias
 
-- Investigar desempenho por vendedor e por transportadora (quando disponível).
+- Investigar o desempenho por vendedor e por transportadora, quando disponível.
 - Analisar atrasos por categoria de produto.
-- Cruzar atraso e avaliação negativa com mais controles.
-- Criar análises exploratórias em Python/Pandas.
-- Construir um dashboard no Power BI.
-- Adicionar gráficos e documentação dos resultados.
+- Aprofundar a relação entre atrasos e avaliações negativas.
+- Desenvolver um dashboard interativo no Power BI.
+- Documentar novas descobertas e indicadores.
 
 ## Status
 
