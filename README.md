@@ -1,6 +1,6 @@
 # Análise de Dados do E-commerce Brasileiro (Olist)
 
-Projeto de portfólio com **PostgreSQL**, utilizando o conjunto público de dados da Olist para investigar vendas, avaliações de clientes e desempenho logístico.
+Projeto de portfólio desenvolvido com **PostgreSQL, SQL e Python**, utilizando o conjunto público de dados da Olist para investigar vendas, avaliações de clientes e desempenho logístico.
 
 ## Objetivo
 
@@ -13,8 +13,8 @@ Utilizar SQL e Python para analisar dados do e-commerce brasileiro, identificar 
 - SQL
 - Python
 - Pandas
-- Jupyter Notebook
 - Matplotlib
+- Google Colab
 
 ## Fonte dos dados
 
@@ -33,6 +33,7 @@ analise-ecommerce-olist/
 ├── analise_ecommerce_olist.ipynb
 └── projeto_olist.sql
 ```
+
 ## Análises realizadas
 
 ### Análises com SQL
@@ -46,8 +47,11 @@ analise-ecommerce-olist/
 
 1. Análise exploratória dos dados do e-commerce.
 2. Análise da evolução mensal dos pedidos.
-3. Avaliação do impacto dos atrasos nas avaliações dos clientes.
-4. Visualização gráfica dos principais indicadores e resultados.
+3. Distribuição dos pedidos por situação.
+4. Análise de cancelamentos e pedidos indisponíveis.
+5. Avaliação do desempenho das entregas.
+6. Comparação de atrasos entre estados brasileiros.
+7. Investigação da relação entre atrasos e avaliações dos clientes.
 
 **Arquivos do projeto:**
 
@@ -70,11 +74,13 @@ Resultados calculados durante a exploração do conjunto:
 - Avaliações com notas 1 ou 2: **14,69%**.
 - Entre pedidos entregues com datas de entrega e previsão disponíveis, **8,11%** chegaram após a data estimada.
 - Entre os estados com pelo menos 500 pedidos entregues, Maranhão apresentou a maior taxa de atraso (**19,67%**) e Paraná a menor (**5,00%**).
+- Entre os registros associados a entregas atrasadas, **54,03%** tiveram avaliações negativas, contra **9,23%** nos registros de entregas no prazo ou antecipadas.
 
 ## Interpretações iniciais
 
-- A maioria das avaliações é positiva, mas avaliações negativas ainda representam uma parcela relevante.
-- Pedidos atrasados tiveram uma proporção muito maior de avaliações negativas do que pedidos entregues no prazo ou antecipadamente, na análise exploratória realizada.
+- A maioria dos pedidos foi concluída com entrega.
+- Avaliações negativas representam uma parcela relevante das avaliações.
+- Pedidos atrasados apresentaram uma proporção muito maior de avaliações negativas do que pedidos entregues no prazo ou antecipadamente.
 - O tempo médio de entrega e a taxa de atraso não são a mesma coisa: o prazo prometido também influencia a classificação de atraso.
 - Comparações entre estados devem considerar o volume de pedidos. Por isso, algumas análises usam um corte mínimo de 500 pedidos.
 
@@ -83,7 +89,7 @@ Resultados calculados durante a exploração do conjunto:
 - Receita e ticket médio apresentados usam `price`, ou seja, valor dos produtos. O frete foi calculado separadamente.
 - Algumas métricas de avaliações contam avaliações, não necessariamente pedidos únicos.
 - A análise de atraso considera pedidos com status `delivered` e datas de entrega e previsão preenchidas.
-- Associação entre atraso e avaliação negativa não prova causalidade.
+- A relação entre atraso e avaliação negativa indica associação, não comprova causalidade.
 - Estados com poucas observações podem apresentar percentuais instáveis.
 - Os CSVs originais não devem ser enviados ao repositório sem necessidade; consulte os termos e a licença da fonte.
 
@@ -99,19 +105,19 @@ Resultados calculados durante a exploração do conjunto:
 
 ### Análises Python
 
-1. Abra o arquivo `analise_ecommerce_olist.ipynb` no Jupyter Notebook.
-2. Certifique-se de que as bibliotecas Pandas e Matplotlib estejam instaladas.
-3. Execute as células do notebook na ordem apresentada.
-4. Confira as tabelas, análises e gráficos gerados.
+1. Abra o arquivo `analise_ecommerce_olist.ipynb` no Google Colab.
+2. Disponibilize os arquivos CSV do conjunto Olist no ambiente.
+3. Certifique-se de que Pandas e Matplotlib estejam instalados.
+4. Execute as células do notebook na ordem apresentada.
+5. Confira as tabelas, análises e gráficos gerados.
 
 ## Próximas melhorias
 
 - Investigar o desempenho por vendedor e por transportadora, quando disponível.
 - Analisar atrasos por categoria de produto.
-- Aprofundar a relação entre atrasos e avaliações negativas.
 - Desenvolver um dashboard interativo no Power BI.
-- Documentar novas descobertas e indicadores.
+- Aprofundar novas análises sobre a experiência dos clientes.
 
 ## Status
 
-Análises exploratórias com SQL e Python concluídas. Projeto em evolução, com possibilidades de aprofundamento e desenvolvimento de dashboard.
+**Análises exploratórias com SQL e Python concluídas.** Projeto de portfólio disponível para consulta e em evolução, com possibilidades de aprofundamento e desenvolvimento de dashboard.
